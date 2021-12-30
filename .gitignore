@@ -1,2 +1,2 @@
-.cloudflared/credentials.json
+.cloudflared/*
 .DS_Store
