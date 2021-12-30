@@ -1,0 +1,7 @@
+tunnel: s2p-tunnel
+credentials-file: .cloudflared/credentials.json
+ingress:
+ - hostname: api.start2play.games
+   service: http://s2p-api:8080
+ # This “catch-all” rule doesn’t have a hostname/path, so it matches everything
+ - service: http_status:404
