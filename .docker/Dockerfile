@@ -8,4 +8,4 @@ RUN  apt-get update \
 RUN  wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb \
   && dpkg -i cloudflared-linux-amd64.deb
 
-CMD cloudflared --config config.yml --origincert .cloudflared/cert.pem tunnel run
+CMD cloudflared --config config.yml --origincert cert.pem tunnel run
